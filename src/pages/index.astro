@@ -1,5 +1,6 @@
 ---
-
+// Server Only
+const name = 'Pedro Alejandro Ramirez';
 ---
 
 <html lang="en">
@@ -11,6 +12,19 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>{name}</h1>
+
+		<p>Welcome to Astro! - the time is {new Date().toLocaleTimeString()}</p>
+
+		<footer>
+
+		</footer>
+
+		<script>
+			const currentYear: number = new Date().getFullYear();
+
+			const footer = document.querySelector('footer') as HTMLElement;
+			footer.innerHTML = `currentYear: ${currentYear}`;
+		</script>
 	</body>
 </html>
