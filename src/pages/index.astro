@@ -15,16 +15,23 @@ const name = 'Pedro Alejandro Ramirez';
 		<h1>{name}</h1>
 
 		<p>Welcome to Astro! - the time is {new Date().toLocaleTimeString()}</p>
+		<p class="current-time"></p>
 
 		<footer>
 
 		</footer>
 
 		<script>
-			const currentYear: number = new Date().getFullYear();
-
+			// Client Only
+			
 			const footer = document.querySelector('footer') as HTMLElement;
+			const currentTimeElement = document.querySelector('.current-time') as HTMLElement;
+
+			const currentYear: number = new Date().getFullYear();
+			const currentTime: string = new Date().toLocaleTimeString();
+
 			footer.innerHTML = `currentYear: ${currentYear}`;
+			currentTimeElement.innerHTML = `Current Time: ${currentTime}`;
 		</script>
 	</body>
 </html>
