@@ -12,6 +12,12 @@ const name = 'Pedro Alejandro Ramirez';
 		<title>Astro</title>
 	</head>
 	<body>
+		<nav>
+			<a href="/">Home Page</a>
+			<a href="/about">About</a>
+			<a href="/contact">Contact Page</a>
+		</nav>
+		<br />
 		<h1>{name}</h1>
 
 		<p>Welcome to Astro! - the time is {new Date().toLocaleTimeString()}</p>
@@ -23,7 +29,7 @@ const name = 'Pedro Alejandro Ramirez';
 
 		<script>
 			// Client Only
-			
+
 			const footer = document.querySelector('footer') as HTMLElement;
 			const currentTimeElement = document.querySelector('.current-time') as HTMLElement;
 
