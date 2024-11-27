@@ -1,4 +1,6 @@
 ---
+import NavBar from "../components/NavBar.astro";
+
 // Server Only
 const name = 'Pedro Alejandro Ramirez';
 ---
@@ -12,11 +14,7 @@ const name = 'Pedro Alejandro Ramirez';
 		<title>Astro</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">Home Page</a>
-			<a href="/about">About</a>
-			<a href="/contact">Contact Page</a>
-		</nav>
+		<NavBar />
 		<br />
 		<h1>{name}</h1>
 
